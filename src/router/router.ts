@@ -7,14 +7,21 @@ const router = createRouter({
   routes:[
     {
       path:"/",
-      component:()=>import("@/components/login.vue"),
-      children:[
-      ]
+      name:"login",
+      component:()=>import(/* webpackChunkName: "login" */"@/components/login.vue"),
+      // children:[
+      // ]
+
+    },
+    {
+      path: '/enroll',
+      name: 'enroll',
+      component: () => import(/* webpackChunkName: "enroll" */"@/components/login/entry/add.vue")
 
     },
     {
       path:'/index',
-      component:()=>import("@/components/index.vue"),
+      component:()=>import(/* webpackChunkName: "index" */"@/components/index.vue"),
       children:[
         {
           path:'/list',
@@ -24,28 +31,23 @@ const router = createRouter({
         {
           path:'/emp/add',
           name:'emp/add',
-          component: ()=>import(/* webpackChunkName: "list" */'@/components/login/entry/add.vue')
+          component: ()=>import(/* webpackChunkName: "emp/add" */'@/components/login/entry/add.vue')
         },
         {
           path: '/emp/update',
           name:'update',
-          component:()=>import("@/components/login/entry/update.vue")
+          component:()=>import(/* webpackChunkName: "update" */"@/components/login/entry/update.vue")
         },
         {
           path: '/tearoom',
           name:'tearoom',
-          component:()=>import("@/components/login/tearoom/list.vue")
+          component:()=>import(/* webpackChunkName: "tearoom" */"@/components/login/tearoom/list.vue")
 
         }
-
-      ]
-    },
-    {
-      path: '/enroll',
-      // name: 'enroll',
-      component:()=>import("@/components/login/entry/add.vue")
-    }
+      ]}
   ]
+
+
 })
 
 

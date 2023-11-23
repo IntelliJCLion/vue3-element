@@ -1,0 +1,12 @@
+.updateBut{
+   background-color: #E6A23C;
+    color: #b88230;
+}
+.deleteBut{
+    background-color: #f6bebe;
+    color: red;
+}
+.addBut{
+    background-color: #67C23A;
+    color: #1c2518;
+}

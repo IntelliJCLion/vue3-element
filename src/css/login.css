@@ -1,0 +1,33 @@
+.input-a{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+.input-su{
+    position: relative;
+    top: 20px;
+    left: 100px;
+
+}
+#login{
+    /*z-index: 6;*/
+    /*position: relative;*/
+    /*margin: auto;*/
+    /*width: 220px;*/
+    /*background-color: #f6bebe;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.image-back{
+   background-color: #f6bebe;
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-color: #1b1e21;
+}

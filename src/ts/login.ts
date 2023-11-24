@@ -15,7 +15,7 @@ let msg:string = "";
 let loginList;
 let username:string = '';
 function blurUsername(use_id:string){
-    imageUrl.value = 'https://q1.qlogo.cn/g?b=qq&nk='+use_id+'&s=640'
+   
 
 }
 
